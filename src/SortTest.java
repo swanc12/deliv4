@@ -69,7 +69,7 @@ public class SortTest{
 			for(int j= 0; j < arr.length-1; j++){
 				if(arr[j] > arr[j+1]){
 					nextGreater = false;
-					failMsg = arr[j] + " is not greater than " + arr[j+1]; 
+					failMsg = arr[j] + " is greater than " + arr[j+1]; 
 					break;
 				}
 			}
@@ -106,9 +106,6 @@ public class SortTest{
 			
 			//Second sort
 			Arrays.sort(arr);
-			
-			boolean equalTo = true;
-			String failMsg = "";
 			
 			for(int j= 0; j < arr.length; j++){
 				assertEquals(arr[j], firstSorted[j]);
